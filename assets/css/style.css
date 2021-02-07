@@ -1,3 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
     background-image: url("../images/background-image.jpg");
+    background-size: cover;
+}
+
+#picture-of-me {
+    height: 60vh;
+    padding: 40px;
+}
+
+#contact-info {
+    color: white;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+#about-me-container {
+    height: 60vh;
+}
+
+#about-me {
+    display: block;
+}
+
+#my-story-button {
+    background-color: rgba(221, 233, 236, 0.815);
+    width: 40%;
+    font-size: 20px;
+}
+
+#my-story-paragraph {
+    color: black;
+    background-color: rgba(111, 133, 150, 0.767);
+}
+
+.lead {
+    color: white;
+}
+
+#github-icon {
+    margin-right: 10px;
 }
