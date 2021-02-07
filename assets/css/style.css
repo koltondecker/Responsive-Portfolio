@@ -43,6 +43,15 @@ body {
     color: white;
 }
 
-#github-icon {
-    margin-right: 10px;
+.project-card {
+    width: 75%;
+    margin: 30px;
+}
+
+#contact-me-card {
+    background-color: rgba(228, 220, 220, 0.425);
+}
+
+.footer-icon {
+    margin: 10px;
 }
