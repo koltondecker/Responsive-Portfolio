@@ -45,6 +45,7 @@ body {
 
 .project-card {
     width: 75%;
+    max-width: 350px;
     margin: 30px;
 }
 
