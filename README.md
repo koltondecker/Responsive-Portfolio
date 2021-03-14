@@ -1,4 +1,7 @@
 # Responsive-Portfolio
+
+View Deployed Project here: https://koltondecker.github.io/Responsive-Portfolio/
+
 This project displays a bootstrap framework portfolio built from scratch and utilizes the responsive aspects of Bootstrap to make this website friendly for all devices. Responsive design ensures that web applications render well on a variety of devices and window or screen sizes. As a developer, you will likely be asked to create a mobile-first application or add responsive design to an existing application. 
 
 This project will serve as the baseline for my future portfolio which will include a more extensive library of my projects to showcase my skills as a full stack web developer. 
