@@ -5,8 +5,15 @@
 }
 
 body {
-    background-image: url("../images/background-image.jpg");
-    background-size: cover;
+    background-color: rgb(250, 244, 236);
+}
+
+.nav-wrapper {
+    background-color: rgb(167, 166, 166, 0.3);
+}
+
+.nav-row {
+    margin: 0;
 }
 
 #picture-of-me {
@@ -15,13 +22,9 @@ body {
 }
 
 #contact-info {
-    color: white;
+    /* color: white; */
     font-size: 1.5rem;
     display: inline-block;
-}
-
-#about-me-container {
-    height: 60vh;
 }
 
 #about-me {
@@ -39,9 +42,9 @@ body {
     background-color: rgba(111, 133, 150, 0.767);
 }
 
-.lead {
+/* .lead {
     color: white;
-}
+} */
 
 .project-card {
     width: 75%;
@@ -51,6 +54,21 @@ body {
 
 #contact-me-card {
     background-color: rgba(228, 220, 220, 0.425);
+}
+
+.page-footer {
+    background-color: rgb(250, 244, 236);
+    padding: 0;
+}
+
+.footer-copyright {
+    color: black;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-icon {

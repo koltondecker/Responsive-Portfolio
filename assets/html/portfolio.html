@@ -6,130 +6,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Page</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body
     <div class="container-fluid">
-        <div class="row">
+        <div class="row nav-row">
             <div class="col-lg-12">
-                <div class="portfolio-navigation">
-                    <nav class="navbar bg-dark navbar-dark navbar-expand-md">
-                        <header id="header" class="float-left text-light">
-                            <h1>
-                                Kolton Decker
-                            </h1>
-                        </header>
-                        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
-                            data-target="#main-navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="main-navigation">
-                            <ul class="nav navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="../../index.html">About</a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
+                <nav class="blue-grey darken-4">
+                    <div class="nav-wrapper">
+                        <a href="./index.html" class="brand-logo">Kolton Decker</a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="../../index.html">About</a></li>
+                            <li><a href="./portfolio.html">Portfolio</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </div>
-        <br>
         <main>
-            <div class="row">
-                <div class="col-md">
-                    <div class="card bg-light mx-auto project-card">
-                        <a href="https://koltondecker.github.io/quarantinis/">
-                            <img src="../images/cocktail-generator-project.png" height="200px" width="300px" class="card-img-top" alt="Quarantini project screenshot">
-                        </a>
-                        <hr>
-                        <div class="card-body">
-                            <h5 class="card-title">quarantini: Cocktail Generator</h5>
-                            <p class="card-text">
-                                This project uses CocktailDB API to generate cocktails based on user's desired liquor.
-                            </p>
-                            <p>Deployed Project: <a href="https://koltondecker.github.io/quarantinis/">https://koltondecker.github.io/quarantinis/</a></p>
-                            <p>GitHub Repository: <a href="https://github.com/koltondecker/quarantinis">https://github.com/koltondecker/quarantinis</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card bg-light mx-auto project-card">
-                        <a href="https://koltondecker.github.io/Day-Planner/">
-                            <img src="../images/day-planner-project.png" height="200px" width="300px" class="card-img-top" alt="Day Planner project screenshot">
-                        </a>
-                        <hr>
-                        <div class="card-body">
-                            <h5 class="card-title">Day Planner</h5>
-                            <p class="card-text">This project allows a user to create a list of tasks for a day and visualize their tasks as the day progresses.</p>
-                            <p>Deployed Project: <a href="https://koltondecker.github.io/Day-Planner/">https://koltondecker.github.io/Day-Planner/</a></p>
-                            <p>GitHub Repository: <a href="https://github.com/koltondecker/Day-Planner">https://github.com/koltondecker/Day-Planner"</a></p>
-                        </div>
-                    </div>
+            <!-- Parallax divider!!! -->
+            <div class="parallax-container">
+                <div class="parallax"><img src="../images/goal-tracker-homepage.png" width="100%"></div>
+            </div>
+            <div class="section grey lighten-3">
+                <div class="row container">
+                    <h2 class="header">Goal Tracker</h2>
+                    <h3 class="grey-text text-darken-3 lighten-3">About this project:</h3>
+                    <p>Application allows user to signup/login where they can Create/Read/Update/Delete goals and milestones within beautiful UI/UX. Information stored in JawsDB database with Express server routing.</p>
+                    <h3 class="grey-text text-darken-3 lighten-3">Technologies Uses:</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS3</li>
+                        <li>Javascript</li>
+                        <li>Materialize</li>
+                        <li>jQuery</li>
+                        <li>Node.js</li>
+                        <li>NPM</li>
+                        <li>Express</li>
+                        <li>Handlebars.js</li>
+                        <li>MySQL</li>
+                        <li>Sequelize</li>
+                        <li>ApexCharts</li>
+                    </ul>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md">
-                    <div class="card bg-light mx-auto project-card">
-                        <a href="https://koltondecker.github.io/Weather-Dashboard/">
-                            <img src="../images/weather-dashboard-project.png" height="200px" width="300px" class="card-img-top" alt="Weather dashboard project screenshot">
-                        </a>
-                        <hr>
-                        <div class="card-body">
-                            <h5 class="card-title">Weather Dashboard</h5>
-                            <p class="card-text">This project uses OpenWeatherMap API to display weather information based on user's search.</p>
-                            <p>Deployed Project: <a href="https://koltondecker.github.io/Weather-Dashboard/">https://koltondecker.github.io/Weather-Dashboard/</a></p>
-                            <p>GitHub Repository: <a href="https://github.com/koltondecker/Weather-Dashboard">https://github.com/koltondecker/Weather-Dashboard</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card bg-light mx-auto project-card">
-                        <a href="ttps://burger-logger-kolton-decker.herokuapp.com/">
-                            <img src="../images/burger-logger.png" height="200px" width="300px" class="card-img-top" alt="Burger Logger project screenshot">
-                        </a>
-                        <hr>
-                        <div class="card-body">
-                            <h5 class="card-title">Burger Logger</h5>
-                            <p class="card-text">This project uses MySQL Database and Express Server with Handlebars to handle routes and html generating. User may add burgers, eat burgers and delete burgers with all data being processed through the databse.</p>
-                            <p>Deployed Project: <a href="https://burger-logger-kolton-decker.herokuapp.com/">https://burger-logger-kolton-decker.herokuapp.com/</a></p>
-                            <p>GitHub Repository: <a href="https://github.com/koltondecker/burger-logger">https://github.com/koltondecker/burger-logger</a></p>
-                        </div>
-                    </div>
+            <div class="parallax-container">
+                <div class="parallax"><img src="../images/cocktail-generator-project.png" width="100%"></div>
+            </div>
+            <div class="section grey lighten-3">
+                <div class="row container">
+                    <h2 class="header">quarantinis: A Cocktail Recipe Generator</h2>
+                    <h3 class="grey-text text-darken-3 lighten-3">About this project:</h3>
+                    <p>Utilizes jQuery ajax calls to cocktailsDB API and dynamically generates cards with cocktail recipes to the webpage for the user to view and interact with. MapQuest API implemented to display breweries based on searched city. Local storage stores saved recipes.</p>
+                    <h3 class="grey-text text-darken-3 lighten-3">Technologies Uses:</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Materialize</li>
+                        <li>jQuery</li>
+                        <li>Ajax Api Calls</li>
+                    </ul>
                 </div>
             </div>
+            <div class="parallax-container">
+                <div class="parallax"><img src="../images/weather-dashboard-project.png" width="100%"></div>
+            </div>
+            <div class="section grey lighten-3">
+                <div class="row container">
+                    <h2 class="header">Weather Dashboard</h2>
+                    <h3 class="grey-text text-darken-3 lighten-3">About this project:</h3>
+                    <p>A simple one-page dashboard that displays current and 5 day forecast weather for the location user searches (user may use current location). Open Weather Map API is used to ajax call for data based on city name. Last 10 searched cities are stored in list on dashboard for quick search.</p>
+                    <h3 class="grey-text text-darken-3 lighten-3">Technologies Uses:</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS3</li>
+                        <li>Javascript</li>
+                        <li>Ajax Api Calls</li>
+                        <li>jQuery</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="parallax-container">
+                <div class="parallax"><img src="../images/burger-logger.png" width="100%"></div>
+            </div>
+            <div class="section grey lighten-3">
+                <div class="row container">
+                    <h2 class="header">quarantinis: A Cocktail Recipe Generator</h2>
+                    <h3 class="grey-text text-darken-3 lighten-3">About this project:</h3>
+                    <p>Utilizes jQuery ajax calls to cocktailsDB API and dynamically generates cards with cocktail recipes to the webpage for the user to view and interact with. MapQuest API implemented to display breweries based on searched city. Local storage stores saved recipes.</p>
+                    <h3 class="grey-text text-darken-3 lighten-3">Technologies Uses:</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Ajax Api Calls</li>
+                        <li>Materialize</li>
+                        <li>jQuery</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Parallax divider!!! -->
         </main>
-        <br>
-        <br>
-        <div class="row">
-            <div class="col">
-                <footer class="card-footer fixed-bottom bg-dark text-center">
-                    <a id="github-icon" class="footer-icon" href="https://github.com/koltondecker"><i class="fab fa-github fa-3x"></i></a>
-                    <a id="linkedin-icon" class="footer-icon" href="https://www.linkedin.com/in/kolton-decker-01302b114/"><i class="fab fa-linkedin fa-3x"></i></a>
-                    <a id="resume-icon" class="footer-icon" href="../images/Kolton-Decker-Resume.pdf"><i class="fas fa-file fa-3x"></i></a>
-                </footer>
+        <footer class="page-footer blue-grey darken-4">
+            <div class="footer-copyright">
+                <div class="black-text container">
+                    <p class="left-align">Kolton Decker</p>
+                    <div class="center-align">
+                        <a id="github-icon" class="footer-icon middle" href="https://github.com/koltondecker"><i class="fab fa-github fa-3x"></i></a>
+                        <a id="linkedin-icon" class="footer-icon middle" href="https://www.linkedin.com/in/kolton-decker-01302b114/"><i class="fab fa-linkedin fa-3x"></i></a>
+                        <a id="resume-icon" class="footer-icon middle" href="assets/images/Kolton-Decker-Resume.pdf"><i class="fas fa-file fa-3x"></i></a>
+                    </div>
+                    <p class="right-align">© 2021 Copyright Text</p>
+                </div>
             </div>
-        </div>
+        </footer>
     </div>
-
-    
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 
 </html>
