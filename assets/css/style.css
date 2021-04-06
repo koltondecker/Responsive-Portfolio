@@ -31,12 +31,25 @@ flex: 1 0 auto;
     padding: 1rem;
 }
 
+#picture-column {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
 #picture-and-contact {
     max-width: 400px;
+    border-radius: 30px;
+    overflow: hidden;
 }
 
 #about-me {
     display: block;
+    max-width: 600px;
+}
+
+.lead {
+    border-radius: 30px;
 }
 
 #my-story-button {
@@ -59,6 +72,9 @@ flex: 1 0 auto;
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
+}
+.project-links>a {
+    color: rgb(36, 36, 36);
 }
 
 .project-link-labels {
