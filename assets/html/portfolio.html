@@ -7,7 +7,8 @@
     <title>Portfolio Page</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body
@@ -22,6 +23,24 @@
                             <li><a href="./portfolio.html">Portfolio</a></li>
                             <li><a href="./contact.html">Contact</a></li>
                         </ul>
+                        <ul id="slide-out" class="sidenav">
+                            <li><div class="user-view">
+                              <a href="#user"><img class="circle" src="../images/professional-headshot.jpeg"></a>
+                              <a href="#name"><span class="black-text name">Kolton Decker</span></a>
+                            </div></li>
+                            <li>
+                                <a id="github-icon" class="sidenav-icon" href="https://github.com/koltondecker"><i class="fab fa-github fa-3x"></i>Check Out My Github</a>
+                            </li>
+                            <li>
+                                <a id="linkedin-icon" class="sidenav-icon" href="https://www.linkedin.com/in/kolton-decker-01302b114/"><i class="fab fa-linkedin fa-3x"></i>Check Out My LinkedIn</a>
+                            </li>
+                            <li><div class="divider"></div></li>
+                            <li><a class="subheader">Navigation</a></li>
+                            <li><a href="../../index.html">About</a></li>
+                            <li><a href="./portfolio.html">Portfolio</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     </div>
                 </nav>
             </div>
@@ -33,50 +52,82 @@
             </div>
             <div class="section grey lighten-2">
                 <div class="row container">
-                    <h2 class="header">Goal Tracker</h2>
-                    <div class="col s12 m6">
+                    <h2 class="header center-align">Goal Tracker</h2>
+                    <div class="col s12 m6 center-align">
                         <h3 class="grey-text text-darken-3 lighten-3">About this project:</h3>
                         <p>Application allows user to signup/login where they can Create/Read/Update/Delete goals and milestones within beautiful UI/UX. Information stored in JawsDB database with Express server routing.</p>    
                     </div>
-                    <div class="col s12 m6">
-                        <h3 class="grey-text text-darken-3 lighten-3">Technologies Uses:</h3>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS3</li>
-                            <li>Javascript</li>
-                            <li>Materialize</li>
-                            <li>jQuery</li>
-                            <li>Node.js</li>
-                            <li>NPM</li>
-                            <li>Express</li>
-                            <li>Handlebars.js</li>
-                            <li>MySQL</li>
-                            <li>Sequelize</li>
-                            <li>ApexCharts</li>
-                        </ul>
+                    <div class="col s12 m6 center-align">
+                        <h3 class="grey-text text-darken-3 lighten-3">Technologies Used:</h3>
+                        <div class="row">
+                            <div class="col s12 m6">
+                                <ul class="tech-lists">
+                                    <li>HTML</li>
+                                    <li>CSS3</li>
+                                    <li>Javascript</li>
+                                    <li>Materialize</li>
+                                    <li>jQuery</li>
+                                    <li>Node.js</li>
+                                </ul>
+                            </div>
+                            <div class="col s12 m6">
+                                <ul class="tech-lists">
+                                    <li>NPM</li>
+                                    <li>Express</li>
+                                    <li>Handlebars.js</li>
+                                    <li>MySQL</li>
+                                    <li>Sequelize</li>
+                                    <li>ApexCharts</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 project-links">
+                        <a id="github-icon" class="center-align" name="source-code" href="https://github.com/koltondecker/goal-tracker" target="_blank"><i class="fab fa-github fa-3x"></i>
+                            <span class="project-link-labels">Source Code</span>
+                        </a>
+                        <a id="linkedin-icon" class="center-align" href="https://goal-tracker-kscc.herokuapp.com/" target="_blank"><i class="far fa-calendar-check fa-3x"></i>
+                            <span class="project-link-labels">Deployed Project</span>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="parallax-container">
-                <div class="parallax"><img src="../images/cocktail-generator-project.png" width="100%"></div>
+                <div class="parallax"><img src="../images/quarantinis-landing-page.jpg" width="100%"></div>
             </div>
             <div class="section grey lighten-2">
                 <div class="row container">
-                    <h2 class="header">quarantinis: A Cocktail Recipe Generator</h2>
-                    <div class="col s12 m6">
+                    <h2 class="header center-align">quarantinis: A Cocktail Recipe Generator</h2>
+                    <div class="col s12 m6 center-align">
                         <h3 class="grey-text text-darken-3 lighten-3">About this project:</h3>
                         <p>Utilizes jQuery ajax calls to cocktailsDB API and dynamically generates cards with cocktail recipes to the webpage for the user to view and interact with. MapQuest API implemented to display breweries based on searched city. Local storage stores saved recipes.</p>
                     </div>
-                    <div class="col s12 m6">
-                        <h3 class="grey-text text-darken-3 lighten-3">Technologies Uses:</h3>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>Materialize</li>
-                            <li>jQuery</li>
-                            <li>Ajax Api Calls</li>
-                        </ul>
+                    <div class="col s12 m6 center-align">
+                        <h3 class="grey-text text-darken-3 lighten-3">Technologies Used:</h3>
+                        <div class="row">
+                            <div class="col s12 m6">
+                                <ul class="tech-lists">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </div>
+                            <div class="col s12 m6">
+                                <ul class="tech-lists">
+                                    <li>Materialize</li>
+                                    <li>jQuery</li>
+                                    <li>Ajax Api Calls</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 project-links">
+                        <a id="github-icon" class="center-align" name="source-code" href="https://github.com/koltondecker/goal-tracker" target="_blank"><i class="fab fa-github fa-3x"></i>
+                            <span class="project-link-labels">Source Code</span>
+                        </a>
+                        <a id="linkedin-icon" class="center-align" href="https://goal-tracker-kscc.herokuapp.com/" target="_blank"><i class="fas fa-glass-cheers fa-3x"></i>
+                            <span class="project-link-labels">Deployed Project</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -85,21 +136,37 @@
             </div>
             <div class="section grey lighten-2">
                 <div class="row container">
-                    <h2 class="header">Weather Dashboard</h2>
-                    <div class="col s12 m6">
+                    <h2 class="header center-align">Weather Dashboard</h2>
+                    <div class="col s12 m6 center-align">
                         <h3 class="grey-text text-darken-3 lighten-3">About this project:</h3>
                         <p>A simple one-page dashboard that displays current and 5 day forecast weather for the location user searches (user may use current location). Open Weather Map API is used to ajax call for data based on city name. Last 10 searched cities are stored in list on dashboard for quick search.</p>
                     </div>
-                    <div class="col s12 m6"></div>
-                        <h3 class="grey-text text-darken-3 lighten-3">Technologies Uses:</h3>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS3</li>
-                            <li>Javascript</li>
-                            <li>Ajax Api Calls</li>
-                            <li>jQuery</li>
-                            <li>Bootstrap</li>
-                        </ul>
+                    <div class="col s12 m6 center-align">
+                        <h3 class="grey-text text-darken-3 lighten-3">Technologies Used:</h3>
+                        <div class="row">
+                            <div class="col s12 m6">
+                                <ul class="tech-lists">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </div>
+                            <div class="col s12 m6">
+                                <ul class="tech-lists">
+                                    <li>Ajax Api Calls</li>
+                                    <li>jQuery</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 project-links">
+                        <a id="github-icon" class="center-align" name="source-code" href="https://github.com/koltondecker/goal-tracker" target="_blank"><i class="fab fa-github fa-3x"></i>
+                            <span class="project-link-labels">Source Code</span>
+                        </a>
+                        <a id="linkedin-icon" class="center-align" href="https://goal-tracker-kscc.herokuapp.com/" target="_blank"><i class="fas fa-cloud-sun fa-3x"></i>
+                            <span class="project-link-labels">Deployed Project</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -108,21 +175,38 @@
             </div>
             <div class="section grey lighten-2">
                 <div class="row container">
-                    <h2 class="header">quarantinis: A Cocktail Recipe Generator</h2>
-                    <div class="col s12 m6">
+                    <h2 class="header center-align">Eat Da Burger: Burger Logger</h2>
+                    <div class="col s12 m6 center-align">
                         <h3 class="grey-text text-darken-3 lighten-3">About this project:</h3>
-                        <p>Utilizes jQuery ajax calls to cocktailsDB API and dynamically generates cards with cocktail recipes to the webpage for the user to view and interact with. MapQuest API implemented to display breweries based on searched city. Local storage stores saved recipes.</p>
+                        <p>A stylistically fun and interactive logger built to allow the user to add burgers to a list called "Ready to Be Eaten" where they are prompted with buttons to 'devour' the burger moving it to a separate list. The user can then delete any burgers that have been devoured. This is an NPM project and all data is processed and stored in a MySQL database.</p>
                     </div>
-                    <div class="col s12 m6"></div>
-                        <h3 class="grey-text text-darken-3 lighten-3">Technologies Uses:</h3>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>Ajax Api Calls</li>
-                            <li>Materialize</li>
-                            <li>jQuery</li>
-                        </ul>
+                    <div class="col s12 m6 center-align">
+                        <h3 class="grey-text text-darken-3 lighten-3">Technologies Used:</h3>
+                        <div class="row">
+                            <div class="col s12 m6">
+                                <ul class="tech-lists">
+                                    <li>HTML</li>
+                                    <li>CSS3</li>
+                                    <li>Javascript</li>
+                                    <li>Materialize</li>
+                                </ul>
+                            </div>
+                            <div class="col s12 m6">
+                                <ul class="tech-lists">
+                                    <li>jQuery</li>
+                                    <li>Express</li>
+                                    <li>MySQL</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 project-links">
+                        <a id="github-icon" class="center-align" name="source-code" href="https://github.com/koltondecker/goal-tracker" target="_blank"><i class="fab fa-github fa-3x"></i>
+                            <span class="project-link-labels">Source Code</span>
+                        </a>
+                        <a id="linkedin-icon" class="center-align" href="https://goal-tracker-kscc.herokuapp.com/" target="_blank"><i class="fas fa-hamburger fa-3x"></i>
+                            <span class="project-link-labels">Deployed Project</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -131,13 +215,11 @@
         <footer class="page-footer blue-grey darken-4">
             <div class="footer-copyright">
                 <div class="black-text container">
-                    <p class="left-align">Kolton Decker</p>
                     <div class="center-align">
                         <a id="github-icon" class="footer-icon middle" href="https://github.com/koltondecker"><i class="fab fa-github fa-3x"></i></a>
                         <a id="linkedin-icon" class="footer-icon middle" href="https://www.linkedin.com/in/kolton-decker-01302b114/"><i class="fab fa-linkedin fa-3x"></i></a>
-                        <a id="resume-icon" class="footer-icon middle" href="assets/images/Kolton-Decker-Resume.pdf"><i class="fas fa-file fa-3x"></i></a>
+                        <a id="resume-icon" class="footer-icon middle" href="../images/Kolton-Decker-Resume.pdf"><i class="fas fa-file fa-3x"></i></a>
                     </div>
-                    <p class="right-align">© 2021 Copyright Text</p>
                 </div>
             </div>
         </footer>

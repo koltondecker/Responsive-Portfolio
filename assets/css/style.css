@@ -6,6 +6,13 @@
 
 body {
     background-color: rgb(250, 244, 236);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+flex: 1 0 auto;
 }
 
 .nav-wrapper {
@@ -16,15 +23,16 @@ body {
     margin: 0;
 }
 
-#picture-of-me {
-    height: 60vh;
-    padding: 40px;
+.sidenav-icon {
+    margin: 10px;
 }
 
-#contact-info {
-    /* color: white; */
-    font-size: 1.5rem;
-    display: inline-block;
+.brand-logo {
+    padding: 1rem;
+}
+
+#picture-and-contact {
+    max-width: 400px;
 }
 
 #about-me {
@@ -42,18 +50,24 @@ body {
     background-color: rgba(111, 133, 150, 0.767);
 }
 
-/* .lead {
-    color: white;
-} */
-
-.project-card {
-    width: 75%;
-    max-width: 350px;
-    margin: 30px;
+.section {
+    background-image: url("../images/grey-background.jpg");
 }
 
-#contact-me-card {
-    background-color: rgba(228, 220, 220, 0.425);
+.project-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.project-link-labels {
+    display: block;
+    margin: 0.5rem;
+}
+
+#contact-me-wrapper {
+    padding: 1rem;
 }
 
 .page-footer {
