@@ -63,6 +63,10 @@ flex: 1 0 auto;
     background-color: rgba(111, 133, 150, 0.767);
 }
 
+.parallax-container>.parallax {
+    z-index: 0;
+}
+
 .section {
     background-image: url("../images/grey-background.jpg");
 }
@@ -73,6 +77,7 @@ flex: 1 0 auto;
     justify-content: center;
     margin-top: 2rem;
 }
+
 .project-links>a {
     color: rgb(36, 36, 36);
 }
