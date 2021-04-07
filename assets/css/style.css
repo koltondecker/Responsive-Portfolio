@@ -68,6 +68,7 @@ flex: 1 0 auto;
 
 .section {
     background-image: url("../images/grey-background.jpg");
+    /* background-color: rgb(250, 244, 236); */
 }
 
 .project-links {
@@ -91,7 +92,6 @@ flex: 1 0 auto;
 }
 
 .page-footer {
-    background-color: rgb(250, 244, 236);
     padding: 0;
 }
 
