@@ -28,7 +28,7 @@ flex: 1 0 auto;
 }
 
 .brand-logo {
-    padding: 1rem;
+    margin-left: 1rem;
 }
 
 #picture-column {
@@ -43,29 +43,34 @@ flex: 1 0 auto;
     overflow: hidden;
 }
 
-#about-me {
-    display: block;
-    max-width: 600px;
+#about-me-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 4rem;
 }
 
-.lead {
-    border-radius: 30px;
-}
-
-#my-story-button {
-    background-color: rgba(221, 233, 236, 0.815);
-    width: 40%;
-    font-size: 20px;
-}
-
-#my-story-paragraph {
-    color: black;
-    background-color: rgba(111, 133, 150, 0.767);
+#row2 {
+    height: 100%;
+    margin: 3rem 0 0 0;
+    align-items: center;
 }
 
 .parallax-container>.parallax {
     z-index: 0;
 }
+
+.project-image {
+    width: 100%;
+}
+
+/* @media only screen and (max-width: 1400px) {
+    .project-image {
+        width: auto;
+    }
+} */
 
 .section {
     background-image: url("../images/grey-background.jpg");

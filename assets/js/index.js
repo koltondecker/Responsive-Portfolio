@@ -1,12 +1,14 @@
-document.addEventListener('DOMContentLoaded', function() {
+$(document).ready(function(){
 
-    const parallaxElems = document.querySelectorAll('.parallax');
-    const collapsibleElems = document.querySelectorAll('.collapsible');
-    var sideNavElems = document.querySelectorAll('.sidenav');
-    
+    $('.parallax').parallax();
 
-    M.Collapsible.init(collapsibleElems);
-    M.Parallax.init(parallaxElems);
-    M.Sidenav.init(sideNavElems);
+    $('.sidenav').sidenav();
+
+    // $(".project-link").hover((e) => {
+    //     const icon = e.target;
+    //     console.log(icon);
+
+    //     e.target.addAttribute("transform", "scale(1.1)");
+    // })
 
 });
